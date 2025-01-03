@@ -18,6 +18,6 @@ func NewUserController() *UserController {
 }
 
 func (uc *UserController) GetUser(c *gin.Context) {
-	// response.SuccessResponse(c, 20001, uc.userService.GetUserService())
-	response.ErrorResponse(c, 20003, "No need")
+	response.SuccessResponse(c, 20001, uc.userService.GetUserService())
+	// response.ErrorResponse(c, 20003, "No need")
 }
