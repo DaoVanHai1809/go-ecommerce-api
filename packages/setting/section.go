@@ -6,7 +6,7 @@ type Config struct {
 }
 
 type MySqlSetting struct {
-	User            string `mapstructure:"user"`
+	Username        string `mapstructure:"username"`
 	Password        string `mapstructure:"password"`
 	Host            string `mapstructure:"host"`
 	DbName          string `mapstructure:"dbname"`
