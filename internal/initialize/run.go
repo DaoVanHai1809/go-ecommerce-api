@@ -12,8 +12,8 @@ func Run() {
 	fmt.Println("Loading configuration mysql", global.Config.Mysql)
 	InitLogger()
 	global.Logger.Info("Config Log ok!!", zap.String("ok", "success"))
-	InitMySql()
-	InitRedis()
+	// InitMySql()
+	// InitRedis()
 
 	var r = InitRouter()
 	r.Run(":8002")
